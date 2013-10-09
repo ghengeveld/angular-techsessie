@@ -4,12 +4,42 @@
   <fieldset class="span8">
     <legend>Uren overzicht</legend>
 
-    <!-- Tabel -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Datum</th>
+          <th>Uren</th>
+          <th>Beschrijving</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="hours in hoursList">
+          <td>{{ hours.date }}</td>
+          <td>{{ hours.hours }}</td>
+          <td>{{ hours.description }}</td>
+        </tr>
+      </tbody>
+    </table>
   </fieldset>
-
   <fieldset class="span4">
     <legend>Uren invoeren</legend>
 
-    <!-- Formulier -->
+    <form ng-submit="addHours(hours)">
+      <div class="row">
+        <div class="span2">
+          <label for="date">Datum:</label>
+          <input type="text" name="date" id="date" ng-model="hours.date" class="span2">
+        </div>
+        <div class="span1">
+          <label for="hours">Uren:</label>
+          <input type="number" name="hours" id="hours" ng-model="hours.hours" class="span1">
+        </div>
+      </div>
+
+      <label for="description">Beschrijving:</label>
+      <textarea class="span4" name="description" id="description" ng-model="hours.description" rows="3"></textarea>
+
+      <button type="submit" class="btn btn-primary">Opslaan</button>
+    </form>
   </fieldset>
 </div>
