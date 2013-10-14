@@ -29,6 +29,8 @@ angular.module('angularTechsessieApp')
       description: 'Tafelvoetbal'
     }];
 
+    $scope.ordering = ['date', 'customer.name'];
+
     $scope.addHours = function(hours) {
       $scope.hoursList.push(hours);
       $scope.hours = {};
