@@ -7,10 +7,10 @@
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>Datum</th>
-          <th>Uren</th>
-          <th>Klant</th>
-          <th>Beschrijving</th>
+          <th class="sortable" ng-click="orderBy('date')">Datum</th>
+          <th class="sortable" ng-click="orderBy('hours')">Uren</th>
+          <th class="sortable" ng-click="orderBy('customer.name')">Klant</th>
+          <th class="sortable" ng-click="orderBy('description')">Beschrijving</th>
         </tr>
       </thead>
       <tbody>
