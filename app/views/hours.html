@@ -9,6 +9,7 @@
         <tr>
           <th>Datum</th>
           <th>Uren</th>
+          <th>Klant</th>
           <th>Beschrijving</th>
         </tr>
       </thead>
@@ -16,6 +17,7 @@
         <tr data-ng-repeat="hours in hoursList">
           <td>{{ hours.date }}</td>
           <td>{{ hours.hours }}</td>
+          <td>{{ hours.customer.name }}</td>
           <td>{{ hours.description }}</td>
         </tr>
       </tbody>
@@ -25,6 +27,14 @@
     <legend>Uren invoeren</legend>
 
     <form ng-submit="addHours(hours)">
+      <label for="customer">Klant:</label>
+      <select name="customer"
+              id="customer"
+              ng-model="hours.customer"
+              ng-options="customer.name for customer in customers"
+              class="span4"
+              required></select>
+
       <div class="row">
         <div class="span2">
           <label for="date">Datum:</label>
