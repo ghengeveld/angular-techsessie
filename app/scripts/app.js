@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularTechsessieApp', [])
+angular.module('angularTechsessieApp', ['angular-underscore'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
