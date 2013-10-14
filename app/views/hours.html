@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr data-ng-repeat="hours in hoursList">
+        <tr data-ng-repeat="hours in hoursList | orderBy:ordering">
           <td>{{ hours.date }}</td>
           <td>{{ hours.hours }}</td>
           <td>{{ hours.customer.name }}</td>
