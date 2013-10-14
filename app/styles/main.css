@@ -2,3 +2,7 @@ body {
   margin: 2em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.sortable {
+  cursor: pointer;
+}
