@@ -9,10 +9,18 @@
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th class="sortable" ng-click="orderBy('date')">Datum</th>
-          <th class="sortable" ng-click="orderBy('hours')">Uren</th>
-          <th class="sortable" ng-click="orderBy('customer.name')">Klant</th>
-          <th class="sortable" ng-click="orderBy('description')">Beschrijving</th>
+          <th class="sortable" ng-click="orderBy('date')">
+            Datum <i sort-icon="ordering" property="date"></i>
+          </th>
+          <th class="sortable" ng-click="orderBy('hours')">
+            Uren <i sort-icon="ordering" property="hours"></i>
+          </th>
+          <th class="sortable" ng-click="orderBy('customer.name')">
+            Klant <i sort-icon="ordering" property="customer.name"></i>
+          </th>
+          <th class="sortable" ng-click="orderBy('description')">
+            Beschrijving <i sort-icon="ordering" property="description"></i>
+          </th>
         </tr>
       </thead>
       <tbody>
