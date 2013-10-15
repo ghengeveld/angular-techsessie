@@ -4,6 +4,8 @@
   <fieldset class="span8">
     <legend>Uren overzicht</legend>
 
+    <input type="text" ng-model="searchQuery" placeholder="Zoeken...">
+
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
@@ -14,7 +16,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr data-ng-repeat="hours in hoursList | orderBy:ordering">
+        <tr data-ng-repeat="hours in hoursList | filter:searchQuery | orderBy:ordering">
           <td>{{ hours.date }}</td>
           <td>{{ hours.hours }}</td>
           <td>{{ hours.customer.name }}</td>
