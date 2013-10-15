@@ -11,6 +11,7 @@
 git clone git@github.com:GHengeveld/angular-techsessie.git
 cd angular-techsessie
 npm install
+bower install
 grunt server
 ```
 
