@@ -4,8 +4,8 @@ angular.module('angularTechsessieApp', ['angular-underscore'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/hours.html',
+        controller: 'HoursController'
       })
       .otherwise({
         redirectTo: '/'

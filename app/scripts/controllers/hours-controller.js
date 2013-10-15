@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('angularTechsessieApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('HoursController', function ($scope) {
 
   });
