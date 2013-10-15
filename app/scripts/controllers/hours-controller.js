@@ -1,16 +1,9 @@
 'use strict';
 
 angular.module('angularTechsessieApp')
-  .controller('HoursController', function ($scope) {
+  .controller('HoursController', function ($scope, customers) {
 
-    $scope.customers = [
-      { name: 'Finalist' },
-      { name: 'METRI' },
-      { name: 'Kennisnet' },
-      { name: 'VSP' },
-      { name: 'MOOG' },
-      { name: 'Amsterdam Museum' }
-    ];
+    $scope.customers = customers;
 
     $scope.hoursList = [{
       date: '2013-10-15',
