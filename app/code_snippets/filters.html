@@ -1,0 +1,23 @@
+
+<div ng-controller="UsersController">
+  <form name="userForm">
+    <label>Je naam:</label>
+    <input type="text" ng-model="user.name" required>
+
+    <label>Je lievelingsgetal:</label>
+    <input type="number" ng-model="user.num" required>
+
+    <p>
+      Naam: {{ user.name | uppercase }}<br>
+      Lievelingsgetal: {{ user.num | number:2 }}
+    </p>
+
+    <button ng-click="addUser(user)"
+            ng-disabled="userForm.$invalid">Toevoegen</button>
+  </form>
+  <ul>
+    <li ng-repeat="user in users | orderBy:'num' | limitTo:3">
+      {{ user.name }}, {{ user.num }}
+    </li>
+  </ul>
+</div>

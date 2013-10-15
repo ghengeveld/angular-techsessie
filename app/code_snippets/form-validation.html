@@ -1,0 +1,16 @@
+
+<form name="registrationForm">
+  <label>Je e-mailadres:</label>
+  <input type="email"
+         ng-model="newUser.emailAddress"
+         required>
+
+  <p>
+    Je e-mailadres is: {{ newUser.emailAddress }}
+  </p>
+
+  <button type="submit"
+          ng-disabled="registrationForm.$invalid">
+    Submit
+  </button>
+</form>

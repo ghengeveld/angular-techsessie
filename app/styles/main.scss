@@ -1,0 +1,235 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+@import "fonts";
+@import "solarized_dark";
+
+* {
+  @include border-radius(0 !important);
+
+  ::selection {
+    background: #db5557;
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #db5557;
+    color: #fff;
+  }
+}
+
+body {
+  background: #1b566d;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 125%;
+  font-weight: 200;
+  color: #fff;
+}
+
+aside {
+  width: 12em;
+  float: left;
+  background: #123c4c;
+
+  h1 {
+    margin: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    font-weight: 500;
+
+    a, a:hover, a:active, a:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    small {
+      color: #839496;
+      font-size: 0.6em;
+      font-weight: 200;
+    }
+  }
+
+  ol {
+    margin: 3em 0;
+    list-style: none;
+
+    li a {
+      display: block;
+      text-decoration: none;
+      color: #839496;
+      padding: 0.5em 1em;
+      line-height: 1em;
+      font-size: 0.8em;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &:hover, &:active, &:focus, &.active {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &.active {
+        border-left: 0.3em #13c2d3 solid;
+        background: #184d62;
+      }
+    }
+  }
+}
+
+section {
+  float: left;
+  margin-left: 5%;
+  width: 75%;
+  padding: 1em 0;
+  line-height: 1.4em;
+
+  h1 {
+    margin: 1em 0;
+    font-weight: 500;
+    z-index: 10;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  ul {
+    margin-bottom: 1.5em;
+
+    li {
+      line-height: 1.5em;
+    }
+
+    &.unstyled li {
+      padding: 0.5em 0;
+    }
+
+    a {
+      color: #fff;
+
+      &:hover, &:focus, &:active {
+        color: #839496;
+        text-decoration: none;
+      }
+    }
+  }
+
+  pre {
+    border: 0;
+    padding: 0;
+
+    code {
+      font-size: 1.3em;
+      line-height: 2em;
+      z-index: 1;
+    }
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  label {
+    display: block;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-weight: 200;
+  }
+
+  input, button {
+    height: auto!important;
+    font-size: 1em!important;
+    line-height: 1em!important;
+    border: 0!important;
+    padding: 0.5em!important;
+  }
+
+  button {
+    background-color: #002b36;
+    color: #fff;
+    padding: 0.5em 1em!important;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+  }
+
+  button[disabled] {
+    color: #001721;
+    cursor: not-allowed;
+  }
+}
+
+.filename {
+  float: right;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 0.6em 1em 0 0;
+  z-index: 10;
+}
+
+.preview {
+  background: #123c4c;
+  padding: 1em;
+}
+
+.flowchart {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 1.3em;
+  text-align: center;
+  background: #123c4c;
+  padding: 1em;
+  width: 12em;
+
+  i {
+    font-size: 1.4em;
+    vertical-align: middle;
+  }
+
+  .block {
+    display: inline-block;
+    margin: 0.7em 1em;
+  }
+}
+
+.nav-tabs {
+  margin: 1.5em 0 0 0;
+  border: 0;
+
+  & > li {
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: #002b36;
+      border: 0;
+      font-weight: 200;
+
+      &:hover {
+        background: none;
+        color: #fff;
+      }
+    }
+
+    &.active a {
+      background: none!important;
+      border: 0!important;
+      border-bottom: 0.2em #13c2d3 solid!important;
+      color: #fff!important;
+    }
+  }
+}
+
+.muted {
+  color: #6d7b7d;
+}
+
+.text-small {
+  font-size: 0.8em;
+}

@@ -1,0 +1,16 @@
+
+<div ng-controller="NavigationController"
+     ng-init="items = []">
+
+  <ul ng-show="items.length > 0">
+    <li ng-repeat="item in items">
+      <a ng-bind="item.caption"
+         ng-click="item.go()"
+         ng-show="currentUser.canView(item)"
+         ng-class="{ active: item.isActive }"></a>
+    </li>
+  </ul>
+
+  <div ng-include="'partials/content.html'"></div>
+
+</div>

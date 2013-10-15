@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="angularTechsessiePresentatieApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="angularTechsessiePresentatieApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="angularTechsessiePresentatieApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="angularTechsessiePresentatieApp"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- endbuild -->
+</head>
+  <body ng-controller="ApplicationController" keynav>
+    <div class="container-fluid">
+        <aside>
+          <h1>
+            <a href="#/home">
+              <small>Techsessie</small><br>
+              AngularJS
+            </a>
+          </h1>
+          <ol class="menu" link-highlight="'active'">
+            <li><a href="#/introduction">Introductie</a></li>
+            <li><a href="#/jquery-vs-angular">jQuery vs Angular</a></li>
+            <li><a href="#/mvc">Model-View-Controller</a></li>
+            <li><a href="#/scope-binding">Scope binding</a></li>
+            <li><a href="#/scope-inheritance">Scope inheritance</a></li>
+            <li><a href="#/form-validation">Form validatie</a></li>
+            <li><a href="#/setup">Installatie</a></li>
+            <li><a href="#/workflow">Workflow</a></li>
+            <li><a href="#/routing">Routing</a></li>
+            <li><a href="#/controllers">Controllers</a></li>
+            <li><a href="#/directives">Directives</a></li>
+            <li><a href="#/filters">Filters</a></li>
+            <li><a href="#/services">Services</a></li>
+            <li><a href="#/hands-on">Hands-on</a></li>
+            <li><a href="#/wrapping-up">Wrapping up</a></li>
+          </ol>
+        </aside>
+        <section ng-view></section>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/highlightjs/highlight.pack.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-highlightjs/angular-highlightjs.min.js"></script>
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/application-controller.js"></script>
+    <script src="scripts/controllers/slide-controller.js"></script>
+    <script src="scripts/controllers/example-controller.js"></script>
+    <script src="scripts/controllers/users-controller.js"></script>
+    <script src="scripts/directives/keynav.js"></script>
+    <script src="scripts/directives/link-highlight.js"></script>
+    <script src="scripts/services/example-service.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
