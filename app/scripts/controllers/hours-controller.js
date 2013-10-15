@@ -1,27 +1,10 @@
 'use strict';
 
 angular.module('angularTechsessieApp')
-  .controller('HoursController', function ($scope, customers) {
+  .controller('HoursController', function ($scope, customers, hours, HoursService) {
 
     $scope.customers = customers;
-
-    $scope.hoursList = [{
-      date: '2013-10-15',
-      hours: 3,
-      customer: { name: 'Finalist' },
-      description: 'Techsessie AngularJS'
-    }, {
-      date: '2013-10-15',
-      hours: 1,
-      customer: { name: 'METRI' },
-      description: 'Implementeren easter-egg'
-    }, {
-      date: '2013-10-15',
-      hours: 2,
-      customer: { name: 'Finalist' },
-      description: 'Tafelvoetbal'
-    }];
-
+    $scope.hoursList = hours;
     $scope.ordering = ['date', 'customer.name'];
 
     $scope.orderBy = function(property) {
@@ -47,8 +30,10 @@ angular.module('angularTechsessieApp')
     };
 
     $scope.addHours = function(hours) {
-      $scope.hoursList.push(hours);
-      $scope.hours = {};
+      HoursService.addEntry(hours).then(function() {
+        $scope.hours = {};
+        $scope.hoursList = HoursService.listEntries();
+      });
     };
 
   });

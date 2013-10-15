@@ -11,6 +11,9 @@ angular.module('angularTechsessieApp', ['ngRoute', 'angular-underscore'])
             return $http.get('http://localhost:9002/api/customers').then(function(response) {
               return response.data;
             });
+          },
+          hours: function(HoursService) {
+            return HoursService.listEntries();
           }
         }
       })
