@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="angularTechsessiePresentatieApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Techsessie AngularJS</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body ng-controller="ApplicationController" keynav>
+    <div class="container-fluid">
+        <aside>
+          <h1>
+            <a href="#/home">
+              <small>Techsessie</small><br>
+              AngularJS
+            </a>
+          </h1>
+          <ol class="menu" link-highlight="'active'">
+            <li><a href="#/introduction">Introductie</a></li>
+            <li><a href="#/jquery-vs-angular">jQuery vs Angular</a></li>
+            <li><a href="#/mvc">Model-View-Controller</a></li>
+            <li><a href="#/scope-binding">Scope binding</a></li>
+            <li><a href="#/scope-inheritance">Scope inheritance</a></li>
+            <li><a href="#/form-validation">Form validatie</a></li>
+            <li><a href="#/setup">Installatie</a></li>
+            <li><a href="#/workflow">Workflow</a></li>
+            <li><a href="#/routing">Routing</a></li>
+            <li><a href="#/controllers">Controllers</a></li>
+            <li><a href="#/directives">Directives</a></li>
+            <li><a href="#/filters">Filters</a></li>
+            <li><a href="#/services">Services</a></li>
+            <li><a href="#/hands-on">Hands-on</a></li>
+            <li><a href="#/wrapping-up">Wrapping up</a></li>
+          </ol>
+        </aside>
+        <section ng-view></section>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-sanitize.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script src="//pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/application-controller.js"></script>
+    <script src="scripts/controllers/slide-controller.js"></script>
+    <script src="scripts/controllers/example-controller.js"></script>
+    <script src="scripts/controllers/users-controller.js"></script>
+    <script src="scripts/directives/keynav.js"></script>
+    <script src="scripts/directives/link-highlight.js"></script>
+    <script src="scripts/services/example-service.js"></script>
+</body>
+</html>

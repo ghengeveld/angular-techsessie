@@ -1,0 +1,333 @@
+* {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+* ::selection {
+  background: #db5557;
+  color: #fff;
+}
+* ::-moz-selection {
+  background: #db5557;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_aijTyevf54tkVDLy-dlnLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/DZ_YjBPqZ88vcZCcIXm6VrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/kbP_6ONYVgE-bLa9ZRbvvnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/ohKfORL_YnhBMzkCPoIqwrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OMD20Sg9RTs7sUORCEN-7brIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+body {
+  background: #1b566d;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 125%;
+  font-weight: 200;
+  color: #fff;
+}
+
+aside {
+  width: 12em;
+  float: left;
+  background: #123c4c;
+}
+aside h1 {
+  margin: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  font-weight: 500;
+}
+aside h1 a, aside h1 a:hover, aside h1 a:active, aside h1 a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+aside h1 small {
+  color: #839496;
+  font-size: 0.6em;
+  font-weight: 200;
+}
+aside ol {
+  margin: 3em 0;
+  list-style: none;
+}
+aside ol li a {
+  display: block;
+  text-decoration: none;
+  color: #839496;
+  padding: 0.5em 1em;
+  line-height: 1em;
+  font-size: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+aside ol li a:hover, aside ol li a:active, aside ol li a:focus, aside ol li a.active {
+  color: inherit;
+  text-decoration: none;
+}
+aside ol li a.active {
+  border-left: 0.3em #13c2d3 solid;
+  background: #184d62;
+}
+
+section {
+  float: left;
+  margin-left: 5%;
+  width: 75%;
+  padding: 1em 0;
+  line-height: 1.4em;
+}
+section h1 {
+  margin: 1em 0;
+  font-weight: 500;
+  z-index: 10;
+}
+section h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+section h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+section ul {
+  margin-bottom: 1.5em;
+}
+section ul li {
+  line-height: 1.5em;
+}
+section ul.unstyled li {
+  padding: 0.5em 0;
+}
+section ul a {
+  color: #fff;
+}
+section ul a:hover, section ul a:focus, section ul a:active {
+  color: #839496;
+  text-decoration: none;
+}
+section pre {
+  border: 0;
+  padding: 0;
+}
+section pre code {
+  font-size: 1.3em;
+  line-height: 2em;
+  z-index: 1;
+}
+section p {
+  margin: 1em 0;
+}
+section label {
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  font-weight: 200;
+}
+section input, section button {
+  height: auto !important;
+  font-size: 1em !important;
+  line-height: 1em !important;
+  border: 0 !important;
+  padding: 0.5em !important;
+}
+section button {
+  background-color: #002b36;
+  color: #fff;
+  padding: 0.5em 1em !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+section button[disabled] {
+  color: #001721;
+  cursor: not-allowed;
+}
+
+.filename {
+  float: right;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 0.6em 1em 0 0;
+  z-index: 10;
+}
+
+.preview {
+  background: #123c4c;
+  padding: 1em;
+}
+
+.flowchart {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 1.3em;
+  text-align: center;
+  background: #123c4c;
+  padding: 1em;
+  width: 12em;
+}
+.flowchart i {
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+.flowchart .block {
+  display: inline-block;
+  margin: 0.7em 1em;
+}
+
+.nav-tabs {
+  margin: 1.5em 0 0 0;
+  border: 0;
+}
+.nav-tabs > li {
+  margin: 0;
+  padding: 0;
+}
+.nav-tabs > li a {
+  color: #002b36;
+  border: 0;
+  font-weight: 200;
+}
+.nav-tabs > li a:hover {
+  background: none;
+  color: #fff;
+}
+.nav-tabs > li.active a {
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 0.2em #13c2d3 solid !important;
+  color: white !important;
+}
+
+.muted {
+  color: #6d7b7d;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+pre code {
+  display: block; padding: 0.5em;
+  background: #002b36; color: #839496;
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .doctype,
+pre .pi,
+pre .lisp .string,
+pre .javadoc {
+  color: #586e75;
+  font-style: italic;
+}
+
+pre .keyword,
+pre .winutils,
+pre .method,
+pre .addition,
+pre .css .tag,
+pre .request,
+pre .status,
+pre .nginx .title {
+  color: #859900;
+}
+
+pre .number,
+pre .command,
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula,
+pre .regexp,
+pre .hexcolor {
+  color: #2aa198;
+}
+
+pre .title,
+pre .localvars,
+pre .chunk,
+pre .decorator,
+pre .built_in,
+pre .identifier,
+pre .vhdl .literal,
+pre .id {
+  color: #268bd2;
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body,
+pre .smalltalk .number,
+pre .constant,
+pre .class .title,
+pre .parent,
+pre .haskell .type {
+  color: #b58900;
+}
+
+pre .preprocessor,
+pre .preprocessor .keyword,
+pre .shebang,
+pre .symbol,
+pre .symbol .string,
+pre .diff .change,
+pre .special,
+pre .attr_selector,
+pre .important,
+pre .subst,
+pre .cdata,
+pre .clojure .title {
+  color: #cb4b16;
+}
+
+pre .deletion {
+  color: #dc322f;
+}
+
+pre .tex .formula {
+  background: #073642;
+}

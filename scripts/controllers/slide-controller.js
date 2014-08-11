@@ -2,5 +2,5 @@
 
 angular.module('angularTechsessiePresentatieApp')
   .controller('SlideController', function ($scope, $routeParams) {
-    $scope.slideUrl = '/views/' + $routeParams.slide + '.html';
+    $scope.slideUrl = '/slides/' + $routeParams.slide + '.html';
   });

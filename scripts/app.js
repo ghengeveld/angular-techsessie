@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularTechsessiePresentatieApp', ['hljs'])
+angular.module('angularTechsessiePresentatieApp', ['ngRoute', 'hljs'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/:slide', {
