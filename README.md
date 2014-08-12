@@ -1,8 +1,6 @@
 # Presentatie voor AngularJS Techsessie
 
-## Requirements
-
-* Bower (npm install -g bower)
+Online beschikbaar: http://ghengeveld.github.io/angular-techsessie-presentatie
 
 ## Installatie
 
