@@ -69,6 +69,14 @@ body {
   color: #fff;
 }
 
+a {
+  color: #96a9ab;
+}
+
+a:hover, a:focus {
+  color: #fff;
+}
+
 aside {
   width: 12em;
   float: left;
@@ -86,7 +94,7 @@ aside h1 a, aside h1 a:hover, aside h1 a:active, aside h1 a:focus {
   text-decoration: none;
 }
 aside h1 small {
-  color: #839496;
+  color: #96a9ab;
   font-size: 0.6em;
   font-weight: 200;
 }
@@ -97,7 +105,7 @@ aside ol {
 aside ol li a {
   display: block;
   text-decoration: none;
-  color: #839496;
+  color: #96a9ab;
   padding: 0.5em 1em;
   line-height: 1em;
   font-size: 0.8em;
@@ -146,7 +154,7 @@ section ul a {
   color: #fff;
 }
 section ul a:hover, section ul a:focus, section ul a:active {
-  color: #839496;
+  color: #96a9ab;
   text-decoration: none;
 }
 section pre {
@@ -247,7 +255,7 @@ section button[disabled] {
 }
 
 .muted {
-  color: #6d7b7d;
+  color: #96a9ab;
 }
 
 .text-small {
