@@ -5,9 +5,9 @@
   <ul ng-show="items.length > 0">
     <li ng-repeat="item in items">
       <a ng-bind="item.caption"
+         ng-class="{ active: item.isActive }"
          ng-click="item.go()"
-         ng-show="currentUser.canView(item)"
-         ng-class="{ active: item.isActive }"></a>
+         ng-if="currentUser.canView(item)"></a>
     </li>
   </ul>
 
