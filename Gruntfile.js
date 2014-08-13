@@ -21,10 +21,6 @@ module.exports = function (grunt) {
     app: 'app'
   };
 
-  try {
-    yeomanConfig.app = require('./bower.json').appPath || yeomanConfig.app;
-  } catch (e) {}
-
   grunt.initConfig({
     yeoman: yeomanConfig,
     watch: {
@@ -73,19 +69,6 @@ module.exports = function (grunt) {
         url: 'http://localhost:<%= connect.options.port %>'
       }
     },
-    clean: {
-      dist: {
-        files: [{
-          dot: true,
-          src: [
-            '.tmp',
-            '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*'
-          ]
-        }]
-      },
-      server: '.tmp'
-    },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -103,9 +86,8 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('server', function (target) {
+  grunt.registerTask('server', function () {
     grunt.task.run([
-      'clean:server',
       'connect:livereload',
       'open',
       'watch'
@@ -113,7 +95,6 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('test', [
-    'clean:server',
     'connect:test',
     'karma'
   ]);
