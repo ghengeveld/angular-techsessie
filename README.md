@@ -18,9 +18,10 @@ De applicatie draait op http://localhost:9001/
 
 ## Opdrachten
 
-Voor iedere opdracht is in deze repository een branch gemaakt. Deze branch geldt als het startpunt voor de opdracht. Een overzicht van de opdrachten en bijbehorende branches:
+Voor iedere opdracht is in deze repository een branch gemaakt. Deze branch geldt als het startpunt voor de opdracht.
+Een overzicht van de opdrachten en bijbehorende branches:
 
-| # | Opdracht                       | Branch (eindresultaat)   |
+| # | Opdracht                       | Branch (startpunt)       |
 |---| ------------------------------ | ------------------------ |
 | 1 | De basis                       | `master`                 |
 | 2 | Sorteren                       | `sorting`                |
@@ -35,7 +36,8 @@ De opdracht kan worden ingeladen door de branch uit te checken, bijvoorbeeld:
 git checkout sorting
 ```
 
-Mogelijk lukt het niet om van branch te wisselen omdat je nog openstaande wijzingen hebt. Dit is eenvoudig te omzeilen door je lokale wijzigingen te 'stashen':
+Mogelijk lukt het niet om van branch te wisselen omdat je nog openstaande wijzingen hebt. Dit is eenvoudig te omzeilen
+door je lokale wijzigingen te 'stashen':
 
 ```
 git stash
@@ -81,7 +83,8 @@ script/server
 
 De API draait op http://localhost:9002/
 
-1. Maak gebruik van de resolve-property om de lijst van klanten op te halen van de API. De URL is http://localhost:9002/api/customers
+1. Maak gebruik van de resolve-property om de lijst van klanten op te halen van de API. De URL is
+http://localhost:9002/api/customers
 
 ### 6. Communiceren met een service
 
