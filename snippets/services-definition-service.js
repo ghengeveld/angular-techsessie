@@ -8,10 +8,11 @@
  *   }]);
  * }
  */
-tsApp.service('ExampleService', function() {
+angular.module('techsessieApp')
+  .service('ExampleService', function () {
 
-  this.sayHello = function() {
-    return "Hello, World!"
-  };
+    this.sayHello = function () {
+      return "Hello, World!";
+    };
 
-});
+  });

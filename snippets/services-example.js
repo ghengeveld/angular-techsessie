@@ -1,10 +1,11 @@
 
-tsApp.factory('ExampleService', function($http) {
+angular.module('techsessieApp')
+  .factory('ExampleService', function ($http) {
 
-  return {
-    loadData: function() {
-      return $http.get('http://www.google.com');
-    }
-  };
+    return {
+      loadData: function () {
+        return $http.get('http://www.google.com');
+      }
+    };
 
-});
+  });

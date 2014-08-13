@@ -1,18 +1,18 @@
 
-tsApp.config(function($routeProvider) {
+angular.module('techsessieApp')
 
-  $routeProvider.when('/home', {
-    templateUrl: 'views/home.html',
-    controller: 'HomeController'
+  .config(function ($routeProvider) {
+    $routeProvider.when('/home', {
+      templateUrl: 'views/home.html',
+      controller: 'HomeController'
+    });
+
+    $routeProvider.when('/contact', {
+      templateUrl: 'views/contact.html',
+      controller: function ($scope) {
+        $scope.sendContactForm = function () {
+          // ...
+        };
+      }
+    });
   });
-
-  $routeProvider.when('/contact', {
-    templateUrl: 'views/contact.html',
-    controller: function($scope) {
-      $scope.sendContactForm = function() {
-        // ...
-      };
-    }
-  });
-
-});

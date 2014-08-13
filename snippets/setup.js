@@ -1,2 +1,2 @@
 
-var tsApp = angular.module('techsessieApp', [ ]);
+angular.module('techsessieApp', [ /* dependencies */ ]);

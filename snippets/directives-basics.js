@@ -1,10 +1,11 @@
 
-tsApp.directive('tsDropdownMenu', function() {
+angular.module('techsessieApp')
+  .directive('dropdownMenu', function () {
 
-  return {
-    restrict: 'EACM',
-    templateUrl: 'partials/dropdown.html',
-    replace: true
-  };
+    return {
+      restrict: 'EACM',
+      templateUrl: 'partials/dropdown.html',
+      replace: true
+    };
 
-});
+  });

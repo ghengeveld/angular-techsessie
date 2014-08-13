@@ -6,12 +6,13 @@
  *   return provider(name, { $get: factoryFn });
  * }
  */
-tsApp.factory('ExampleService', function() {
+angular.module('techsessieApp')
+  .factory('ExampleService', function () {
 
-  return {
-    sayHello: function() {
-      return "Hello, World!"
-    }
-  };
+    return {
+      sayHello: function () {
+        return "Hello, World!";
+      }
+    };
 
-});
+  });

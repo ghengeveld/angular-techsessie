@@ -1,12 +1,12 @@
 
-tsApp.config(function($routeProvider) {
+angular.module('techsessieApp')
 
-  $routeProvider.when('/home', {
-    templateUrl: 'views/home.html'
+  .config(function ($routeProvider) {
+    $routeProvider.when('/home', {
+      templateUrl: 'views/home.html'
+    });
+
+    $routeProvider.otherwise({
+      redirectTo: '/home'
+    });
   });
-
-  $routeProvider.otherwise({
-    redirectTo: '/home'
-  });
-
-});

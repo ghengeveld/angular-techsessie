@@ -1,12 +1,14 @@
 
-tsApp.controller('ExampleController', function($scope) {
+angular.module('techsessieApp')
 
-  // 'Property'
-  $scope.someValue = 42;
+  .controller('ExampleController', function ($scope) {
 
-  // 'Method'
-  $scope.add = function(num) {
-    $scope.someValue += num;
-  };
+    // 'Property'
+    $scope.someValue = 42;
 
-});
+    // 'Method'
+    $scope.add = function (num) {
+      $scope.someValue += num;
+    };
+
+  });
