@@ -1,5 +1,5 @@
 
-<form name="registrationForm">
+<form name="registrationForm" ng-submit="register(newUser)">
   <label>Je e-mailadres:</label>
   <input type="email"
          ng-model="newUser.emailAddress"
@@ -9,8 +9,7 @@
     Je e-mailadres is: {{ newUser.emailAddress }}
   </p>
 
-  <button type="submit"
-          ng-disabled="registrationForm.$invalid">
+  <button type="submit" ng-disabled="registrationForm.$invalid">
     Submit
   </button>
 </form>
